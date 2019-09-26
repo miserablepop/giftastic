@@ -11,6 +11,8 @@ $(document).ready(function(){
     // FUNCTIONS
     ////////////////////////////////////////////////////////////////////////////////
 
+    // Function to loop through the topics array to generate buttons
+
     function renderButtons(topic){
         
         // Empty div for the generate buttons
@@ -22,7 +24,18 @@ $(document).ready(function(){
 
     }
 
+    // 
+    $('#add-topic').on('click', function(event){
+        console.log(this);
+        event.preventDefault();
 
+        var topic = $('#topic-input').val();
+        console.log(topic);
+        topics.push(topic);
+
+        renderButtons();
+
+    });
 
     renderButtons();
 
