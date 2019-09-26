@@ -19,7 +19,12 @@ $(document).ready(function(){
         $('#buttons-view').empty();
         
         for (var i = 0; i < topics.length; i++){
-            $('#buttons-view').append('<button>' + topics[i] + '</button>');
+
+            var topicBtn = $('<button>');
+            topicBtn.addClass('topic');
+            topicBtn.attr('data-name', topics[i]);
+            topicBtn.text(topics[i]);
+            $('#buttons-view').append(topicBtn);
         }
 
     }
