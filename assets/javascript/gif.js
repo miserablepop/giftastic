@@ -69,6 +69,7 @@ $(document).ready(function(){
             for (var i = 0; i < responseBody.length; i++) {
 
                 var gifDiv = $("<div>");
+                gifDiv.addClass('gifHolder');
     
                 var rating = responseBody[i].rating;
     

@@ -1,4 +1,6 @@
-
+.jumbotron{
+    color: white;
+}
 
 .player {
     margin: 5px;
@@ -6,4 +8,9 @@
 
 #gifs-view{
     margin-top: 50px;
+}
+
+.gifHolder{
+    display: inline-block;
+    margin: 5px;
 }
