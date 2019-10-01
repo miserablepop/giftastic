@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
 </head>
-<body>
+<body class="p-3 mb-2 bg-gradient-dark text-white">
     <div class="container">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
@@ -22,15 +22,11 @@
             </div>
         </div>
         <form id="player-form">
-            <div class="form-group row">
-                <label for="player-input" class="col-sm-2 col-form-label">Enter a Player's Name</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="player-input" placeholder="Player name">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control player-input" placeholder="Player's name" aria-label="Player's name" aria-describedby="button-addon2">
+                <div class="input-group-append add-player">
+                    <input class="btn btn-outline-secondary" type="submit" id="button-addon2" value="Add Player">
                 </div>
-            </div>
-            <div class="form-row col-md-4">
-                <!-- Button triggers new movie to be added -->
-                <input id="add-player" type="submit" class="btn btn-primary" value="Add a Player, Yo!">
             </div>
             
         </form>

@@ -33,11 +33,11 @@ $(document).ready(function(){
 
     // Function to handle the event once the submit button is clicked
     
-    $('#add-player').on('click', function(event){
+    $('#player-form').on('click', '.add-player', function(event){
         console.log(this);
         event.preventDefault();
 
-        var player = $('#player-input').val().trim();
+        var player = $('.player-input').val().trim();
         console.log(player);
         players.push(player);
 
@@ -75,7 +75,7 @@ $(document).ready(function(){
                 var p = $("<p>").text("Rating: " + rating);
     
                 var playerImage = $("<img>");
-                playerImage.addClass('gif');
+                playerImage.addClass('img-thumbnail gif');
                 playerImage.attr("src", responseBody[i].images.fixed_height_still.url);
                 
     
