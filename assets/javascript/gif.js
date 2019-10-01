@@ -3,13 +3,14 @@ $(document).ready(function(){
     // VARIABLES
     ////////////////////////////////////////////////////////////////////////////////
     
-    // Array to store topics to generate buttons
+    // Array to store player's names to generate buttons
     var players = ['Messi', "Cristano Ronaldo", "Robert Lewandowski",'Eden Hazard', 'Neymar', 'Raheem Sterling',
                     'Kevin de Bruyne', 'Kylian Mbappe', 'Mohamed Salah', 'Virgil van Dijk'];
 
     
     // FUNCTIONS
     ////////////////////////////////////////////////////////////////////////////////
+
 
     // Function to loop through the players array to generate buttons
 
@@ -21,7 +22,7 @@ $(document).ready(function(){
         for (var i = 0; i < players.length; i++){
 
             var playerBtn = $('<button>');
-            playerBtn.addClass('player');
+            playerBtn.addClass('btn btn-secondary player');
             playerBtn.attr('data-name', players[i]);
             playerBtn.text(players[i]);
             $('#buttons-view').append(playerBtn);
@@ -29,7 +30,9 @@ $(document).ready(function(){
 
     }
 
+
     // Function to handle the event once the submit button is clicked
+    
     $('#add-player').on('click', function(event){
         console.log(this);
         event.preventDefault();
@@ -42,7 +45,9 @@ $(document).ready(function(){
 
     });
 
+
     // Function to handle once a topic button is clicked
+
     $('#buttons-view').on('click','.player', function(){
 
         $('#gifs-view').empty();
@@ -84,6 +89,7 @@ $(document).ready(function(){
         
     });
 
+
     // Function to play still GIF on click
 
     $('body').on('click', '.gif', function() {
@@ -99,6 +105,7 @@ $(document).ready(function(){
       }
     });
     
+    // Call to render the buttons
 
     renderButtons();
 

@@ -8,30 +8,44 @@
 
     <!-- Link to external CSS file-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
 </head>
 <body>
     <div class="container">
-
-      
-
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Soccer Player GifTastic</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+        </div>
         <form id="player-form">
-            <label for="player-input">Add a Player, Yo!</label>
-            <input type="text" id="player-input">
-        
-            <!-- Button triggers new movie to be added -->
-            <input id="add-player" type="submit" value="Add a Player, Yo!">
+            <div class="form-group row">
+                <label for="player-input" class="col-sm-2 col-form-label">Enter a Player's Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="player-input" placeholder="Player name">
+                </div>
+            </div>
+            <div class="form-row col-md-4">
+                <!-- Button triggers new movie to be added -->
+                <input id="add-player" type="submit" class="btn btn-primary" value="Add a Player, Yo!">
+            </div>
+            
         </form>
 
-         <!-- Topic buttons will go here -->
+         <!-- Player buttons will go here -->
         <div id="buttons-view"></div>
-
+        
+        <!-- GIFs will go here -->
         <div id="gifs-view"></div>
           
     </div>
 
-    
+    <!-- Link to Bootsrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Link to external JS file -->
     <script src="assets/javascript/gif.js" type="text/javascript"></script>
 </body>
 </html>
