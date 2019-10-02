@@ -1,16 +1,31 @@
-.jumbotron{
+
+.navbar{
     color: white;
 }
 
 .player {
     margin: 5px;
+    font-family: 'Martel', serif;
 }
 
-#gifs-view{
-    margin-top: 50px;
+.player-input{
+    font-family: 'Martel', serif;
 }
 
 .gifHolder{
     display: inline-block;
     margin: 5px;
+}
+
+.add-player{
+    font-family: 'Martel', serif;
+}
+
+#title{
+    font-family: 'Martel', serif;
+    font-weight: bold;
+}
+
+#gifs-view{
+    margin-top: 50px;
 }

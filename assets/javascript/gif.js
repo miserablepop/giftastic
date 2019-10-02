@@ -22,7 +22,7 @@ $(document).ready(function(){
         for (var i = 0; i < players.length; i++){
 
             var playerBtn = $('<button>');
-            playerBtn.addClass('btn btn-secondary player');
+            playerBtn.addClass('btn btn-dark player');
             playerBtn.attr('data-name', players[i]);
             playerBtn.text(players[i]);
             $('#buttons-view').append(playerBtn);
@@ -33,15 +33,24 @@ $(document).ready(function(){
 
     // Function to handle the event once the submit button is clicked
     
-    $('#player-form').on('click', '.add-player', function(event){
+    $('.player-form').on('click', '.add-player', function(event){
         console.log(this);
         event.preventDefault();
-
+        
         var player = $('.player-input').val().trim();
-        console.log(player);
-        players.push(player);
+        var a = players.indexOf(player);
+        console.log(a);
+        
+        if (player === ""){
+            alert("You need to enter a soccer player's name!");
+        } else if (a === -1){
+            console.log(player);
+            players.push(player);
+            
+        }
 
         renderButtons();
+        $('.player-input').val('');
 
     });
 

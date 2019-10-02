@@ -12,33 +12,27 @@
     <!-- Link to Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
+    <!-- Link to Anton font -->
+    <link href="https://fonts.googleapis.com/css?family=Martel:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron jumbotron-fluid" style="background-color: black">
-            <div class="container">
-                <h1 class="display-4">Soccer Player GifTastic</h1>
-                <p class="lead">Search for your favorite soccer player GIFs</p>
-            </div>
-        </div>
-        <form id="player-form">
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand"><span id = "title">Soccer Player GifTastic</span></a>
+        <form class="form-inline player-form">
             <div class="input-group mb-3">
-                <input type="text" class="form-control player-input" placeholder="Player's name" aria-label="Player's name" aria-describedby="button-addon2">
+                <input type="text" class="form-control mr-sm-2 player-input" placeholder="Player's name" aria-label="Player's name" aria-describedby="button-addon2">
                 <div class="input-group-append add-player">
-                    <input class="btn btn-outline-secondary" type="submit" id="button-addon2" value="Add Player">
+                    <input class="btn btn-dark" type="submit" id="button-addon2" value="Add Player">
                 </div>
-            </div>
-            
         </form>
+    </nav>
 
-         <!-- Player buttons will go here -->
-        <div id="buttons-view"></div>
+    <!-- Player buttons will go here -->
+    <div id="buttons-view"></div>
         
-        <!-- GIFs will go here -->
-        <div id="gifs-view"></div>
-          
-    </div>
-
+    <!-- GIFs will go here -->
+    <div id="gifs-view"></div>
+        
     <!-- Link to Bootsrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Link to external JS file -->
