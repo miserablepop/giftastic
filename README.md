@@ -12,4 +12,8 @@ The site will display 10 Gifs for your viewing pleasure.
 
 2) If the name you enter already exists in displayed buttons, you will be alerted that the button already exists.
 
+3) After each click on a player button, a new set of 10 GIFs will appear above the previously selected. Scroll down if you would like to see the earlier selected players.
+
+
+
 Enjoy!
